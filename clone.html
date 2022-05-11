@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+#body{
+  height: 17000px;  
+  overflow-x: hidden;
+}
+
+
+
+#header{
+    height: 150px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 1200px;
+    
+}
+#static{
+  width: auto;
+  position: relative;
+}
+
+#nav {
+    /* padding: 20px; */
+    float: left;
+    
+}
+
+#nav li{
+    display: inline-block;
+    /* height: 100; */
+    /* width: 100; */
+    padding: 40px;
+   text-align: center;
+   vertical-align: baseline;
+  
+}
+
+#btn{
+    float: right;
+    margin-top: 47px;
+    width: 133px;
+    background: #00A5B1;
+    border-radius: 20px;
+    padding: 8px 0 9px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+#lang{
+
+    padding: 14px 45px 0px 6px;
+    position: absolute;
+    right: -40px;
+    top: 7px;
+    font-size: 13px;
+
+}
+
+#en{
+    /* position: relative; */
+    color: gray;
+}
+                                    /* 이미지 */
+
+#carouselExampleControls{
+  height: 73vh;
+  margin-top: 0px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    margin-top: 10%;
+    top: 20%;
+    bottom: 20%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    display: inline-block;
+    bottom: 35%;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    bottom: 35%;
+}
+     
+#carousel-inner{
+  display: inline-block;
+}
+/*-------------------------- 컨텐츠 -----------------------*/
+#section{
+  width: 1200px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.content::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#grid{
+    position: relative;
+    height: 830px;
+    width: 130%;
+    background-color: white;
+    list-style: none;
+}
+
+#cate{
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+#ellipse{
+  font-size: 17px;
+}
+
+#contents-left{
+  float: left;
+  display:inline;
+  width:60%;
+  margin: 15px;
+  position: relative;
+  /* overflow: hidden; */
+}
+#btn-wp{
+  text-align: center;
+  margin: -13px -90px 0px 100px;
+}
+
+
+#btn-more{
+  display: inline-block;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid #3A466A;
+  width: 117px;
+  height: 30px;
+  line-height: 27px;
+  font-size: 12px;
+
+}
+ 
+  
+
+   
+
+#cafeopen{
+  float: right;
+  width: 20%;
+  height: 30%;
+  background-color:rgb(56, 115, 143);
+  background-image: url(img/가맹배경.jpg);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#cafeopen a{
+  border-radius: 30%;
+  background-color: #10939c;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+
+}
+
+#cafeopen h5{
+  color: #00A5B1;
+}
+
+#txt{
+  color:black;
+}
+                                   /* md 영역 */
+
+#main-md{
+  padding-bottom: 100px;
+}      
+
+#main-md-slides{
+  margin: 25px auto 0;
+  text-align: center;
+  padding: 0 86px;
+  display: block;
+}
+#slick-prev-arrow{
+  left: 0;
+  background-image: url(/img/뒤로버튼.png);
+  background-color: rgb(187, 207, 207);
+}
+#slick-initialized{
+  display: block;
+}
+
+#slick-slide{
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+#slick-list{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+#slick-track{
+  display: block;
+  position: relative;
+  opacity: 1;
+  width: 60%;
+  align-items: center;
+  transform: translate3d(-1048px,0px,0px);
+}
+#main-md-slides{
+  width: 232px;
+  margin-right: 30px;
+}
+
+
+</style>
+<body>
+<div id="wrap"display="block">
+    <header id="header">
+    <!-- 헤더 -->
+        <div id="static">          
+            <ul id="nav">
+                <img src="img/베네캣.jpg" width="100" height="140"
+                top="100">
+              <li>카페베네</li>
+              <li>메뉴</li> 
+              <li>스토어</li>
+              <li>멤버쉽</li> 
+              <li>글로벌</li> 
+              <li>컨텐츠</li>
+            </ul>
+            <a herf="" id="btn" class="">가맹문의</a>
+            <div id="lang">
+
+              <a herf="" id="kr">KR</a>
+              <a herf="" id="en">EN</a>
+            </div>
+        </div>
+      </header>
+    <!-- 메인 -->  
+    <div id="container">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="width: 100%;"display="inline-block">
+              <img src="img/빙수사진.jpg" width="2000px;" height="700px;" alt="...">
+            </div>
+            <div class="carousel-item" style="width: 100%;"display="inline-block">
+              <img src="img/콜드브루사진.jpg" width="2000px;" height="700px;" alt="...">
+            </div>
+            <div class="carousel-item" style="width: 100%;"display="inline-block">
+              <img src="img/치즈사진.jpg" width="2000px;" height="700px;" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+    <!-- 컨텐츠 -->
+    <section id="section" class="content">
+    <br><br>  
+        <div id="contents-left">
+          <h3>컨텐츠</h3>
+          <ul id="grid" class="grid" style="position: relative;"> 
+            <li id="grid-item" class="grid-item" style="position:absolute; left:0%; top:0px;">
+              <img src="img/신경주.png" width="100%" height="100%">
+              <div class="grid-item-txt">
+              <p id="cate">매장</p>
+              <p id="ellipse">OPEN/신경주역점</p>
+              </div>
+            </li>
+            <li id="grid-item" class="grid-item" style="position:absolute; left:33.3333%; top:0px;">
+              <img src="img/1인빙수.jpg" width="45%" height="45%">
+              <div class="grid-item-txt">
+              <p id="cate">메뉴</p>
+              <p id="ellipse">1인빙수</p>
+              </div>
+            </li>
+            <li id="grid-item" class="grid-item"style="position:absolute; left:66.6666%; top:0px;">
+              <img src="img/전남도청.png" width="100%" height="100%">
+              <div class="grid-item-txt">
+                <p id="cate">매장</p>
+              <p id="ellipse">OPEN/전남도청점</p>
+            </div>
+            </li>
+            <li id="grid-item" class="grid-item"style="position:absolute; left:0%; top:400px;">
+              <img src="img/지구의날.png" width="100%px" height="100%">
+              <div class="grid-item-txt">
+                <p id="cate">우리동네</p>
+              <p id="ellipse">지구의날</p>
+            </div>
+            </li>
+            <li id="grid-item" class="grid-item"style="position:absolute; left:33.3333%; top:400px;">
+              <img src="img/블루밍.png" width="40%" height="40%">
+              <div class="grid-item-txt">
+                <p id="cate">메뉴</p>
+              <p id="ellipse">블루밍콜드브루</p>
+              </div>
+            </li>
+            <li id="grid-item" class="grid-item"style="position:absolute; left:66.6666%; top:400px;">
+              <img src="img/피스타치오.jpg" width="70%" height="70%">
+              <div class="grid-item-txt">
+                <p id="cate">메뉴</p>
+              <p id="ellipse">피스타치오라떼</p>
+              </div>
+            </li>
+          </ul>
+          <div id="btn-wp">
+            <a href="" id="btn-more">컨텐츠더보기</a>
+          </div>
+          <br><br><br><br><br>
+        </div>
+        <div id="cafeopen">
+          <h5>조금 더 특별하고 따뜻한,그런 카페베네<h5>
+          <h5>내가 오픈하고 싶은 카페<h5>
+          <div id="txt">
+            <img src="img/카페1.jpg.">
+            <h4>내가 오픈하고 싶은 카페</h4>
+            <p id="con">
+              "동네와 공간, 저마다의"
+              <br>
+              "특별함과 다양함은 모두 다르니까요"
+            </p>
+            <a href="">인테리어 보기</a>
+          </div>
+          <div><img src="img/카페2.jpg"></div>
+          <h6>가맹 개설 안내</h6>
+          <div>가맹점 개설을위한절차를<br>자세하게 안내드립니다</div>
+          <a href="">개설 절차 보기</a>
+        </div>
+    </section>
+
+    <section id="main-md">
+      <div id="static">
+          <h3>New&Best MD</h3>
+      <div id="main-md-slides"></div>
+      <button id="slick-prev-arrow"type="button">Previous</button>
+      <div id="slick-list">
+      <div id="slick-track" style="opacity: 1; width:50000px; translate:translate3d(-1048px,0px,px);">
+         <div id="slick-slide slick-current" data-slick-index="0"aria-hidden="false" >
+         <a href="" target="_blank" id="slide-item"style="width:100%; display:inline-block;">
+         <div id="thumbs-imgs">
+           <img src="img/슬라이드1.jpg" alt="슬라이드1">
+         </div>
+         <div id="thumbs-cont">
+            <div id="dt">블루밍 브랜드 드립백(8개입)&모슈x굳세나 텀블러(350ml)선물 세트</div>
+            <div id="dd">39.000원</div>
+         </div>
+          </a>
+      </div>
+    </div>
+      <div id="slick-slide slick-active" data-slick-index="1"aria-hidden="false">
+        <div>
+          <a href="" target="_blank" id="slides-item" style="width:100%; display:inline-block;">
+            <div class="thumbs-imgs">
+              <img src="img/슬라이드2.jpg" alt="슬라이드2">
+            </div>
+            <div id="thumbs-cont">
+              <div id="dt">시그니처 드립백 커피 & 슬림 스텐컵(300ml) 선물세트</div>
+              <div id="dd">29,000원</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="slick-slide slick-active" data-slick-index="2"aria-hidden="false">
+          <div>
+            <a href="" target="_blank" id="slides-item" style="width:100%; display:inline-block;">
+              <div class="thumbs-imgs">
+                <img src="img/슬라이드3.jpg" alt="슬라이드3">
+              </div>
+              <div id="thumbs-cont">
+                <div id="dt">원두 커피 티백(16개입)&머그컵(520ml)선물 세트</div>
+                <div id="dd">34,000원</div>
+              </div>
+            </a>
+          </div>
+      </div>
+      <div id="slick-slide slick-active" data-slick-index="3"aria-hidden="false">
+        <div>
+          <a href="" target="_blank" id="slides-item" style="width:100%; display:inline-block;">
+            <div class="thumbs-imgs">
+              <img src="img/슬라이드4.jpg" alt="슬라이드4">
+            </div>
+            <div id="thumbs-cont">
+              <div id="dt">에티오피아 디카페인 드립백(8개입)&머그 스텐컵 민트(350ml)선물 세트</div>
+              <div id="dd">32,000원</div>
+            </div>
+          </a>
+        </div>
+    </div>
+      
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+        </div>
+    </section>
+
+</div>
+
+        
+
+    
+
+</body>
+</html>
