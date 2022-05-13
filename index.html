@@ -10,6 +10,10 @@
     <!-- 주석 -->
 </head>
 <style>
+         A:link{text-decoration:none}
+        A:visited{text-decoration:none}
+
+
     html {
         scroll-behavior: smooth;
     }
@@ -56,58 +60,7 @@
         height: auto;
         background-color: burlywood;
     }
-
-</style>
-
-<body>
-    <div id="header">
-        <a href="#home"><b class="menu">소개</b></a>
-        <a href="#work"><b class="menu">검사</b></a>
-        <a href="#react"><b class="menu">반응</b></a>
-        <a href="#real"><b class="menu">그 외</b></a>
-        <a href="#end"><b class="menu">마치며</b></a>
-    </div>
-    <div id="home" class="home">
-        <h1 style="margin-bottom: 1%;"><mark>MBTI란???</mark></h1>
-        <h6 style=color:whitesmoke>MBTI(Myers-Briggs Type Indicator)는 마이어스(Myers)와 브릭스(Briggs)가 스위스의 정신분석학자인 카를 융(Carl Jung)의 심리 유형론을 토대로 고안한 자기 보고식 성격 유형 검사 도구이다.</h6>
-        <img src= "img/자료.jpg" alt="16가지표">
-        <img src= "img/자료2.jpg" alt="4가지표">
-        <br><span style="color:aqua; font-size: larger;">※과몰입 절대금지※</span>
-    </div>
-    <div id="work" class="work">
-        <h1>무료검사</h1>
-        <h6>다음버튼을눌러 무료로검사해볼수있다</h6>
-        
-        <button type="button" ><a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">무료검사</a></button>
-        <button type="button" onclick="move()">무료검사</button>
-    </div>
-    <div id="react" class="react">
-        <h1>MBTI별 반응</h1>
-        <h6>mbti별로 같은상황이지만 다른 반응을 보이면서 서로를 신기해하기도한다</h6>
-        <br>
-        <h6>ex)귀엽다라는 소리를들었을때 등등...</h6>
-        <img src="img/자료4.jpg" alt="귀엽다" style="margin: 5%;"></img>
-        <img src="img/오징어2.jpg" alt="오징어" style="margin: 0%;" width="37%"></img>
-        <img src="img/부딪힘.jpg" alt="부딪힘" style="margin-left: 5%;" width="30%"></img>
-        <br>
-        <br>
-        <h6>그리고 이것을베이스로 많은 유튜브들도 제작되어지고있다</h6>
-        <br>
-        
-        <link><iframe width="560" height="315" src="https://www.youtube.com/embed/yv40ynkMkKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <link><iframe width="560" height="315" src="https://www.youtube.com/embed/lJj6qKjZzv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h6 style="margin-bottom: auto;">(많은 화제가 되었던 <mark>깻잎논쟁</mark>을 넘어 새우논쟁을 하고있는 유튜브)</h6>
-
-    </div>
-    <div id="real" class="real">
-        <span style=color:white>다른 MBTI가 궁금하다면??</span><br>
-        <span style=color:white>하단 MTI를 클릭시 링크된 사이트로 이동합니다</span>
-        <style>
-        
-        A:link{text-decoration:none}
-        A:visited{text-decoration:none}
-
-        .ISTJ{
+    .ISTJ{
             grid-area: ISTJ;
             background-color: rgb(127, 224, 123);
             font-size: 50px;
@@ -512,8 +465,53 @@
             " ESTP  ESFP  ENFP  ENTP"
             ;
         }
-    </style>
-    
+
+</style>
+
+<body>
+    <div id="header">
+        <a href="#home"><b class="menu">소개</b></a>
+        <a href="#work"><b class="menu">검사</b></a>
+        <a href="#react"><b class="menu">반응</b></a>
+        <a href="#real"><b class="menu">그 외</b></a>
+        <a href="#end"><b class="menu">마치며</b></a>
+    </div>
+    <div id="home" class="home">
+        <h1 style="margin-bottom: 1%;"><mark>MBTI란???</mark></h1>
+        <h6 style=color:whitesmoke>MBTI(Myers-Briggs Type Indicator)는 마이어스(Myers)와 브릭스(Briggs)가 스위스의 정신분석학자인 카를 융(Carl Jung)의 심리 유형론을 토대로 고안한 자기 보고식 성격 유형 검사 도구이다.</h6>
+        <img src= "img/자료.jpg" alt="16가지표">
+        <img src= "img/자료2.jpg" alt="4가지표">
+        <br><span style="color:aqua; font-size: larger;">※과몰입 절대금지※</span>
+    </div>
+    <div id="work" class="work">
+        <h1>무료검사</h1>
+        <h6>다음버튼을눌러 무료로검사해볼수있다</h6>
+        
+        <button type="button" ><a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">무료검사</a></button>
+        <button type="button" onclick="move()">무료검사</button>
+    </div>
+    <div id="react" class="react">
+        <h1>MBTI별 반응</h1>
+        <h6>mbti별로 같은상황이지만 다른 반응을 보이면서 서로를 신기해하기도한다</h6>
+        <br>
+        <h6>ex)귀엽다라는 소리를들었을때 등등...</h6>
+        <img src="img/자료4.jpg" alt="귀엽다" style="margin: 5%;"></img>
+        <img src="img/오징어2.jpg" alt="오징어" style="margin: 0%;" width="37%"></img>
+        <img src="img/부딪힘.jpg" alt="부딪힘" style="margin-left: 5%;" width="30%"></img>
+        <br>
+        <br>
+        <h6>그리고 이것을베이스로 많은 유튜브들도 제작되어지고있다</h6>
+        <br>
+        
+        <link><iframe width="560" height="315" src="https://www.youtube.com/embed/yv40ynkMkKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <link><iframe width="560" height="315" src="https://www.youtube.com/embed/lJj6qKjZzv8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h6 style="margin-bottom: auto;">(많은 화제가 되었던 <mark>깻잎논쟁</mark>을 넘어 새우논쟁을 하고있는 유튜브)</h6>
+
+    </div>
+    <div id="real" class="real">
+        <span style=color:white>다른 MBTI가 궁금하다면??</span><br>
+        <span style=color:white>하단 MTI를 클릭시 링크된 사이트로 이동합니다</span>
+       
         <div class="container">
             <div class="ISTJ">                
                 <img src="./img/istj청.jpg" id="istjimage" class="istjimage" alt="..." width="100%" >
